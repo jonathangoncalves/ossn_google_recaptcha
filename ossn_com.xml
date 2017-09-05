@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component xmlns="http://www.opensource-socialnetwork.org/v/3.0">
+    <name>Google reCAPTCHA</name>
+    <id>ReCaptcha</id>
+    <author>Jonathan Goncalves</author>
+    <description>Add a Google reCAPTCHA on forms</description>
+    <license>Open Source Social Network License (OSSN LICENSE) v3.0</license>
+    <author_url>http://github.com/jonathangoncalves</author_url>
+    <version>1.0</version>
+	<requires>
+		<type>ossn_version</type>
+		<version>4.0</version>
+	</requires>
+</component>
