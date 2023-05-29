@@ -19,6 +19,7 @@ define('RECAPTCHA', ossn_route()->com . 'ReCaptcha/');
 function recaptcha_init()
 {
   ossn_extend_view('forms/signup/before/submit', 'recaptcha/view');
+  ossn_extend_view('forms/resetlogin/before/submit', 'recaptcha/view');
   ossn_register_callback('action', 'load', 'recaptcha_check');
   ossn_register_com_panel('recaptcha', 'settings');
   if(ossn_isAdminLoggedin()){
@@ -34,7 +35,8 @@ function recaptcha_init()
 function recaptcha_actions_validate()
 {
   return ossn_call_hook('recaptcha', 'actions', false, array(
-    'user/register'
+    'user/register',
+    'resetlogin'
   ));
 }
 
